@@ -155,12 +155,13 @@ section p {
     width: 100%;
     max-width: 750px;
 }
-.accordion .question{
+.accordion li{
     list-style: none;
     width: 100%;
     padding: 5px;
 }
-.accordion .question button{
+.accordion li button{
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -169,25 +170,30 @@ section p {
     font-size: 24px;
     font-weight: 400;
     background: #303030;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     cursor: pointer;
     position: relative;
+    text-align: start;
+}
+.accordion li button img{
+    float: right;
+    width: 30px;
+    color: #fff;
+    background-color: #303030;
 }
 
 input[type="radio"]{
     display: none;
 }
-.accordion .content{
-    background: #303030;
+
+.accordion li .content{
+    width: 90%;
+    background-color: #303030;
     text-align: left;
-    padding: 0 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-}
-.accordion input[type="radio"]:checked + button + .content{
-    max-height: 600px;
-    padding: 30px 20px;
+    margin: 2px;
+    padding: 20px;
+    font-size: 24px;
+    display: none;
 }
 
 /*---faq---*/
