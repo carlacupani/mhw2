@@ -155,12 +155,12 @@ section p {
     width: 100%;
     max-width: 750px;
 }
-.accordion li{
+.accordion .question{
     list-style: none;
     width: 100%;
     padding: 5px;
 }
-.accordion li label{
+.accordion .question button{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -173,13 +173,7 @@ section p {
     cursor: pointer;
     position: relative;
 }
-label::after{
-    content: '+';
-    font-size: 34px;
-    position: absolute;
-    right: 20px;
-    transition: transform 0.5s;
-}
+
 input[type="radio"]{
     display: none;
 }
@@ -191,13 +185,11 @@ input[type="radio"]{
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;
 }
-.accordion input[type="radio"]:checked + label + .content{
+.accordion input[type="radio"]:checked + button + .content{
     max-height: 600px;
     padding: 30px 20px;
 }
-.accordion input[type="radio"]:checked + label::after{
-    transform: rotate(135deg);
-}
+
 /*---faq---*/
 .faq .email-signup{
     max-width: 600px;
@@ -292,8 +284,5 @@ footer .language-btn{
     .accordion li label{
         padding: 10px;
         font-size: 14px;
-    }
-    label::after{
-        font-size: 22px;
     }
 }
