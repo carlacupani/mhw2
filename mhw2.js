@@ -1,7 +1,6 @@
 
 const readMoreButtons = document.querySelectorAll('.faq li button');
 
-
 readMoreButtons.forEach(button => {
     button.addEventListener('click', () => {
         
