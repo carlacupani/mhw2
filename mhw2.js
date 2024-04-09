@@ -34,24 +34,20 @@ bnt4.addEventListener("click", destroy);
 bnt5.addEventListener("click", destroy);
 bnt6.addEventListener("click", destroy);
 
-function toggleAccordion() {
-    const clickedButton = this;
-    list.forEach(question => {
-        const content = question.nextElementSibling;
-        const arrow = question.querySelector("img");
-        if (question !== clickedButton && content.style.display === "block") {
-            arrow.style.transform = "rotate(-45deg)";
-            content.style.display = "none";
+function destroy(){
+    list.forEach(answer => {
+        if(answer.lastElementChild.style.display == "block" && answer.firstElementChild != this){
+            answer.firstElementChild.lastElementChild.style.transform = "translate(-50%) rotate(-45deg)";
+            answer.lastElementChild.style.display = "none";
         }
-    });
+        let element = this.nextElementSiblings;
+        if(element.style.display == "none"){
+            this.lastElementChild.style.transform = "rotate(45deg)";
+            element.style.display = "block";
+        }else{
+            this.lastElementChild.style.transform = "rotate(0deg)";
+            element.style.display = "none";
+        }
+    })
 
-    const content = clickedButton.nextElementSibling;
-    const arrow = clickedButton.querySelector("img");
-    if (content.style.display === "none") {
-        arrow.style.transform = "rotate(180deg)";
-        content.style.display = "block";
-    } else {
-        arrow.style.transform = "rotate(0deg)";
-        content.style.display = "none";
-    }
 }
