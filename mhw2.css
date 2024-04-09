@@ -27,11 +27,18 @@ nav{
 button{
     cursor: pointer;
 }
-.logo{
+.logo1{
     width: 167px;
     height: 45px;
     margin-right: auto;
 }
+.logo2{
+    width: 167px;
+    height: 45px;
+    margin-right: auto;
+    display: none;
+}
+
 .language{
     color: #fff;
     border-radius: 4px;
