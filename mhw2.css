@@ -156,12 +156,14 @@ section p {
     max-width: 750px;
 }
 .accordion li{
+    
     list-style: none;
     width: 100%;
     padding: 5px;
 }
 .accordion li button{
-    width: 90%;
+    color: #fff;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -174,6 +176,7 @@ section p {
     cursor: pointer;
     position: relative;
     text-align: start;
+    border: none;
 }
 .accordion li button img{
     float: right;
@@ -187,13 +190,13 @@ input[type="radio"]{
 }
 
 .accordion li .content{
-    width: 90%;
+    width: 100%;
     background-color: #303030;
     text-align: left;
     margin: 2px;
     padding: 20px;
     font-size: 24px;
-    display: none;
+    
 }
 
 /*---faq---*/
