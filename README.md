@@ -17,4 +17,4 @@ Il progetto è disponibile online! Puoi vederlo in azione cliccando qui:
 1. Clicca sul link sopra per vedere il sito online.  
 2. Se vuoi esplorare il codice, clona la repository con:  
    ```bash
-   git clone https://github.com/tuo-username/mhw1.git
+   git clone https://github.com/tuo-username/mhw2.git
