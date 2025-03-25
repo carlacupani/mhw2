@@ -9,7 +9,8 @@ Il progetto è disponibile online! Puoi vederlo in azione cliccando qui:
 
 ## 📁 Struttura della Repository  
 - **index.html** → Pagina principale del sito  
-- **mhw2.css** → Foglio di stile per la grafica  
+- **mhw2.css** → Foglio di stile per la grafica
+- **mhw2.js** → Contiene il codice JavaScript per la gestione degli eventi e delle animazioni
 - **images/** → Cartella contenente le risorse visive 
 
 ## 🚀 Come Visualizzare il Progetto  
